@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js CDN Example</title>
+  <!-- Include Vue.js via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ greeting }}</h1>
+    <input type="text" v-model="name" placeholder="Enter your name">
+    <button @click="sayHello">Say Hello</button>
+  </div>
+
+  <script>
+    // Create a new Vue instance
+    var app = new Vue({
+      el: '#app',
+      data: {
+        name: '',
+        greeting: ''
+      },
+      methods: {
+        sayHello: function() {
+          this.greeting = 'Hello, ' + this.name + '!';
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+

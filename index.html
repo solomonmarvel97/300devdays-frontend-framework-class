@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- <h1>{{profile.firstName + " " + profile.lastName}}</h1> -->
+        <!-- <button v-on:click="showMessage">Show Message</button> -->
+
+        <h1>Our Recent Blogs</h1>
+        
+        <div class="blogs">
+            <div class="blog" v-for="blog in blogs">
+                <h2 class="title">{{blog.title}}</h2>
+                <p class="description">{{blog.description}}</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // We will create a vue instance here
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                profile: {
+                    firstName: "John",
+                    lastName: "Doe"
+                },
+                blogs: [
+                    {
+                        title: 'Blog 1',
+                        description: 'Lorem ipsum dolor bla bla bla'
+                    },
+                    {
+                        title: 'Blog 2',
+                        description: 'Lorem ipsum dolor bla bla bla'
+                    },
+                    {
+                        title: 'Blog 3',
+                        description: 'Lorem ipsum dolor bla bla bla'
+                    },
+                ]
+            },
+            methods: {
+                showMessage: function () {
+                    let firstName = this.profile.firstName
+                    let lastName = this.profile.lastName
+                    alert(`Hello ${firstName} ${lastName}`)
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
