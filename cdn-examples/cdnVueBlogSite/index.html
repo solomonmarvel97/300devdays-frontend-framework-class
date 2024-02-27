@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <title>Simple Blog</title>
+    <!-- Include Vue.js via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>{{blogTitle}}</h1>
+
+        <input type="text" placeholder="enter text here">
+        <button @click="changeBlogTitle">Change Blog Title</button>
+
+        <div class="blogGrid">
+            <div v-for="blog in blogs" class="blogCard">
+                <h2> {{blog.blogTitle}}</h2>
+                <p> {{blog.blogDescription}}</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Create a new Vue instance
+        var app = new Vue({
+            el: '#app',
+            data: {
+
+                blogTitle: "Amaka's Blog",
+                blogs: [
+                    {
+                        blogId: 1,
+                        blogTitle: "Simple blog 1",
+                        blogDescription: "Lorem ipsum this is a simple blog 1 here with vue cdn"
+                    },
+                    {
+                        blogId: 2,
+                        blogTitle: "Simple blog 2",
+                        blogDescription: "Lorem ipsum this is a simple blog 2 here with vue cdn"
+                    },
+                    {
+                        blogId: 3,
+                        blogTitle: "Simple blog 3",
+                        blogDescription: "Lorem ipsum this is a simple blog 3 here with vue cdn"
+                    },
+                    {
+                        blogId: 4,
+                        blogTitle: "Simple blog 4",
+                        blogDescription: "Lorem ipsum this is a simple blog 4 here with vue cdn"
+                    },
+                    {
+                        blogId: 5,
+                        blogTitle: "Simple blog 5",
+                        blogDescription: "Lorem ipsum this is a simple blog 5 here with vue cdn"
+                    },
+                    {
+                        blogId: 6,
+                        blogTitle: "Simple blog 6",
+                        blogDescription: "Lorem ipsum this is a simple blog 6 here with vue cdn"
+                    },
+                ]
+            },
+            methods: {
+                changeBlogTitle: function () {
+                    this.blogTitle = "Hell World"
+                }
+            }
+        });
+    </script>
+
+    <style>
+        .blogGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px
+        }
+
+        .blogCard {
+            border: 20px;
+            border: 1px solid black;
+            padding: 15px
+        }
+    </style>
+</body>
+
+</html>
