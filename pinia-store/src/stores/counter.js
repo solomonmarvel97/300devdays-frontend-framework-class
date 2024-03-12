@@ -4,6 +4,7 @@ export const useCounterStore = defineStore('counter', {
   // State
   state: () => ({
     count: 0,
+    userInfo
   }),
 
   // Getters
