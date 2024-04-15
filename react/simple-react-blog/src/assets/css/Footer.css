@@ -1,8 +1,8 @@
 .Footer {
     background: black;
     padding: 4px;
-    position: fixed;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0px; */
     width: 100%;
 }
 
