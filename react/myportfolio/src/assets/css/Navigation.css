@@ -1,0 +1,15 @@
+nav {
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    margin-bottom: 2em;
+}
+
+@media (max-width: 1000px) {
+    nav {
+        background-color: yellow;
+    }
+}

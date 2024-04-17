@@ -1,0 +1,23 @@
+/* body {
+    background-color: azure;
+} */
+
+a {
+    all: unset;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 90%;
+    }
+}
