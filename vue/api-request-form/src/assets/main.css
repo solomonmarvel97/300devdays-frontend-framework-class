@@ -1,0 +1,47 @@
+@import url("./form.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Inter, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400 !important;
+}
+
+body {
+  background-color: wheat;
+}
+
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  margin-bottom: 2em;
+}
+
+.logo > img {
+  height: 80px;
+  object-fit: cover;
+}

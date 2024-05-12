@@ -1,0 +1,35 @@
+form {
+    display: grid;
+    gap: 24px;
+    background: white;
+    padding: 24px
+}
+
+form .form-group {
+    display: grid;
+    gap: 8px;
+}
+
+form input {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    border: 1px solid #1e1e1e46;
+}
+
+form input::placeholder {
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+}
+
+.btn-primary {
+    background-color: rgb(255, 118, 21);
+    color: white;
+    border: none !important;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: rgb(252, 130, 43);
+}

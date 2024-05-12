@@ -1,0 +1,19 @@
+{
+  "name": "express-form-validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "joi": "^17.12.2",
+    "mongoose": "^8.2.3",
+    "swagger-ui-express": "^5.0.0"
+  }
+}

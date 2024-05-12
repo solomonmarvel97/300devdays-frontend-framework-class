@@ -1,0 +1,16 @@
+.Footer {
+    background: black;
+    padding: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.Footer > div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.Footer  p {
+    color: rgb(215, 127, 127)
+}
