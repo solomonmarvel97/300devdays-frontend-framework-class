@@ -1,0 +1,13 @@
+{
+  "name": "Ampt",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "rvest.vs-code-prettier-eslint"
+      ]
+    }
+  },
+  "postCreateCommand": "npm i @ampt/cli@latest --global"
+}

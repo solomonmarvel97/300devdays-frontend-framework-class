@@ -1,0 +1,6 @@
+tasks:
+- init: |
+    if [ ! -d "node_modules" ] || [ ! -d "node_modules/@ampt/cli" ]; then
+      npm i @ampt/cli@latest --save-dev
+    fi
+  command: npm run gitpod:ampt

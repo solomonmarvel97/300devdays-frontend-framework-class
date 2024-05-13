@@ -1,0 +1,6 @@
+.ampt
+node_modules
+.amptrc
+.ampt*rc
+.ampt/
+.DS_Store
